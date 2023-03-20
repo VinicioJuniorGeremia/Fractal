@@ -1,6 +1,6 @@
 # Fractal
 
-´´´jaavscript
+```jaavscript
 import turtle
 
 for i in range(0, 650, 10):
@@ -13,4 +13,4 @@ for i in range(0, 650, 10):
 
 
 turtle.Screen().exitonclick()
-´´´
+```
