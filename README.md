@@ -5,7 +5,7 @@
 Um fractal é um objeto geométrico que exibe uma estrutura semelhante em diferentes escalas. Em outras palavras, um fractal é uma figura que é composta por partes menores que se assemelham à figura como um todo. Essas partes menores também têm a mesma complexidade da figura original, e essa repetição de padrões se repete infinitamente em diferentes escalas.
 
 | Onde eles podem ser encontrados?
-a
+
 Os fractais podem ser encontrados em muitos lugares da natureza, como em flores, nuvens, montanhas, rios e até mesmo no nosso sistema circulatório. Eles também são usados em muitas áreas da ciência, como na física, matemática, biologia, economia e computação gráfica.
 
 | A partir disso, podemos desenhar gráficos fractais, utilizando a biblioteca Turtle...
@@ -47,6 +47,9 @@ for i in range(1):
     turtle.right(150)
     turtle.forward(345)
 ```
+<p>
+  <img src="Estrela.gif" width="598" height="336">
+</p>
 
 #ESPIRAL
 ```jaavscript
@@ -59,6 +62,10 @@ for i in range(0, 650, 10):
     turtle.forward(i)
     turtle.left(90)
 ```
+<p>
+  <img src="Espiral Quad.gif" width="598" height="336">
+</p>
+
 #ARVORE
 ```javascript
 import turtle
@@ -92,6 +99,9 @@ drawTree(100)
 turtle.done()
 //É chamado o método 'done()' da biblioteca Turtle, que mantém a janela aberta e exibe o desenho da árvore fractal.
 ```
+<p>
+  <img src="Arvore.gif" width="598" height="336">
+</p>
 
 #FLOCO DE NEVE
 ```javascript
@@ -146,6 +156,10 @@ for gen in range(generation):
     axiom = apply_rules(axiom)
 //O loop interno itera sobre cada caractere da string do axioma e move a tartaruga de acordo com as regras da L-system. O axioma é atualizado aplicando as regras de substituição definidas na função apply_rules.
 ```
+<p>
+  <img src="Floco de Neve.gif" width="598" height="336">
+</p>
+
 #TRI-GLOBS
 ```javascript
 import turtle
@@ -199,3 +213,6 @@ for gen in range(generation):
     axiom = apply_rules(axiom)
 //O loop interno itera sobre cada caractere da string do axioma e move a tartaruga de acordo com as regras da L-system. O axioma é atualizado aplicando as regras de substituição definidas na função apply_rules.
 ```
+<p>
+  <img src="Tri-Globs.gif" width="598" height="336">
+</p>
