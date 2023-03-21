@@ -13,8 +13,6 @@ for i in range(1):
     turtle.forward(200)
     turtle.right(120)
     turtle.forward(200)
-
-turtle.Screen().exitonclick()
 ```
 #ESTRELA
 ```javascript
@@ -33,8 +31,6 @@ for i in range(1):
     turtle.forward(300)
     turtle.right(150)
     turtle.forward(345)
-    
-turtle.Screen().exitonclick()
 ```
 
 #ESPIRAL
@@ -47,10 +43,6 @@ for i in range(0, 650, 10):
 
     turtle.forward(i)
     turtle.left(90)
-
-
-
-turtle.Screen().exitonclick()
 ```
 
 #FLOCO DE NEVE
@@ -104,6 +96,4 @@ for gen in range(generation):
             trig.left(angle)
 
     axiom = apply_rules(axiom)
-
-turtle.Screen().exitonclick()
 ```
