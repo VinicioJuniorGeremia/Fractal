@@ -1,5 +1,42 @@
 # Fractal
 
+#ESTRELA
+```javascript
+import turtle
+
+for i in range(1):
+    turtle.pensize(5)
+    turtle.left(60)
+    turtle.forward(200)
+    turtle.right(60)
+    turtle.right(60)
+    turtle.forward(200)
+    turtle.right(120)
+    turtle.forward(200)
+
+turtle.Screen().exitonclick()
+```
+#ESTRELA
+```javascript
+import turtle
+
+for i in range(1):
+    turtle.pensize(5)
+    turtle.color("green")
+    turtle.left(60)
+    turtle.forward(300)
+    turtle.right(120)
+    turtle.forward(300)
+    turtle.right(150)
+    turtle.forward(350)
+    turtle.right(150)
+    turtle.forward(300)
+    turtle.right(150)
+    turtle.forward(345)
+    
+turtle.Screen().exitonclick()
+```
+
 #ESPIRAL
 ```jaavscript
 import turtle
