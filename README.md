@@ -55,8 +55,94 @@ for i in range(0, 650, 10):
     turtle.forward(i)
     turtle.left(90)
 ```
+#ARVORE
+```javascript
+import turtle
+//Importa a biblioteca Turtle para o código.
+turtle.bgcolor("black")
+arv = turtle.Turtle()
+arv.pensize(2)
+arv.color("green")
+arv.left(90)
+arv.backward(100)
+arv.speed(999)
+//Inicialmente, é definido um fundo preto para a janela e criado um objeto Turtle chamado 'arv', que é utilizado para desenhar a árvore.
+def drawTree(i):
+    if i < 10:
+        print("Inside")
+        return
+    else:
+        print("Quitside")
+        arv.forward(i)
+        arv.color("magenta")
+        arv.circle(2)
+        arv.color("brown")
+        arv.left(30)
+        drawTree(3*i/4)
+        arv.right(60)
+        drawTree(3*i/4)
+        arv.left(30)
+        arv.backward(i)
+//A função 'drawTree' é definida para desenhar a árvore. Ela recebe um parâmetro 'i', que é a altura da árvore a ser desenhada.
+drawTree(100)
+turtle.done()
+//É chamado o método 'done()' da biblioteca Turtle, que mantém a janela aberta e exibe o desenho da árvore fractal.
+```
 
 #FLOCO DE NEVE
+```javascript
+import turtle
+//Importa a biblioteca Turtle para o código.
+#Config. screen
+WIDTH, HEIGHT = 1366, 650
+screen = turtle.Screen()
+screen.setup(WIDTH, HEIGHT)
+screen.screensize(2*WIDTH, 2*HEIGHT)
+screen.bgcolor('black')
+screen.delay(0)
+//Configura as dimensões da tela de exibição, bem como a cor do fundo. O delay(0) faz com que a animação seja executada o mais rapidamente possível.
+#Config. Turtle
+trig = turtle.Turtle()
+trig.pensize(2)
+trig.speed(1)
+trig.setpos(-WIDTH // 6, HEIGHT // 6)
+trig.color('gold')
+//Cria um turtle chamada "trig", que será usada para desenhar o fractal. Define algumas características da tartaruga, como a largura da caneta, a velocidade e a posição inicial.
+# L-system
+generation = 5
+axiom = 'F++F++F'
+chr_1, rule_1 = 'F', 'F-F+-F-F+G+G'
+chr_2, rule_2 = 'G', 'GG'
+step = 300
+angle = 60
+//Define uma L-system: a quantidade de gerações, o axioma inicial, dois caracteres possíveis (F e G), e duas regras de substituição. O comprimento do passo e o ângulo de rotação são definidos para desenhar a L-system.
+def apply_rules(axiom):
+    return ''.join([rule_1 if chr == chr_1 else chr for chr in axiom])
+//A função apply_rules recebe uma string como entrada e aplica as regras de substituição definidas na L-system.
+for gen in range(generation):
+    turtle.pencolor('white')
+    turtle.goto(-WIDTH // 2 + 60, HEIGHT // 2 - 100)
+    turtle.clear()
+    turtle.write(f'Geração: {generation}', font=('Arial', 60, "normal"))
+
+    trig.setheading(0)
+    trig.goto(-WIDTH // 6, HEIGHT // 6)
+    trig.clear()
+
+    length = step / pow(3, gen)
+//O loop principal do programa itera sobre cada geração da L-system. Dentro do loop, o título da geração atual é exibido na tela usando o método write da biblioteca Turtle. Em seguida, a posição inicial da tartaruga é redefinida, o comprimento do passo é recalculado e a tartaruga é reposicionada no início.
+    for chr in axiom:
+        if chr == chr_1:
+            trig.forward(length)
+        elif chr == '+':
+            trig.right(angle)
+        elif chr == '-':
+            trig.left(angle)
+
+    axiom = apply_rules(axiom)
+//O loop interno itera sobre cada caractere da string do axioma e move a tartaruga de acordo com as regras da L-system. O axioma é atualizado aplicando as regras de substituição definidas na função apply_rules.
+```
+#TRI-GLOBS
 ```javascript
 import turtle
 //Importa a biblioteca Turtle para o código.
@@ -108,37 +194,4 @@ for gen in range(generation):
 
     axiom = apply_rules(axiom)
 //O loop interno itera sobre cada caractere da string do axioma e move a tartaruga de acordo com as regras da L-system. O axioma é atualizado aplicando as regras de substituição definidas na função apply_rules.
-```
-
-#ARVORE
-```javascript
-import turtle
-
-turtle.bgcolor("black")
-arv = turtle.Turtle()
-arv.pensize(2)
-arv.color("green")
-arv.left(90)
-arv.backward(100)
-arv.speed(999)
-
-def drawTree(i):
-    if i < 10:
-        print("Inside")
-        return
-    else:
-        print("Quitside")
-        arv.forward(i)
-        arv.color("magenta")
-        arv.circle(2)
-        arv.color("brown")
-        arv.left(30)
-        drawTree(3*i/4)
-        arv.right(60)
-        drawTree(3*i/4)
-        arv.left(30)
-        arv.backward(i)
-
-drawTree(100)
-turtle.done()
 ```
