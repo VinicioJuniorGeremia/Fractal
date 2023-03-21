@@ -8,6 +8,9 @@ Um fractal é um objeto geométrico que exibe uma estrutura semelhante em difere
 
 Os fractais podem ser encontrados em muitos lugares da natureza, como em flores, nuvens, montanhas, rios e até mesmo no nosso sistema circulatório. Eles também são usados em muitas áreas da ciência, como na física, matemática, biologia, economia e computação gráfica.
 
+| A partir disso, podemos desenhar gráficos fractais, utilizando a biblioteca Turtle...
+A biblioteca Turtle é uma biblioteca gráfica em Python que permite desenhar figuras geométricas na tela do computador usando comandos simples.
+
 #TRIANGULO
 ```javascript
 import turtle
