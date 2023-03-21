@@ -1,6 +1,6 @@
 # Fractal
 
-#ESTRELA
+#TRIANGULO
 ```javascript
 import turtle
 
