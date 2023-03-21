@@ -5,7 +5,7 @@
 Um fractal é um objeto geométrico que exibe uma estrutura semelhante em diferentes escalas. Em outras palavras, um fractal é uma figura que é composta por partes menores que se assemelham à figura como um todo. Essas partes menores também têm a mesma complexidade da figura original, e essa repetição de padrões se repete infinitamente em diferentes escalas.
 
 | Onde eles podem ser encontrados?
-
+a
 Os fractais podem ser encontrados em muitos lugares da natureza, como em flores, nuvens, montanhas, rios e até mesmo no nosso sistema circulatório. Eles também são usados em muitas áreas da ciência, como na física, matemática, biologia, economia e computação gráfica.
 
 | A partir disso, podemos desenhar gráficos fractais, utilizando a biblioteca Turtle...
