@@ -25,6 +25,10 @@ for i in range(1):
     turtle.right(120)
     turtle.forward(200)
 ```
+<p>
+  <img src="Triangulo.gif" width="598" height="336">
+</p>
+
 #ESTRELA
 ```javascript
 import turtle
